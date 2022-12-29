@@ -5,7 +5,10 @@ import star from "../images/star.png";
 const Card = () => {
   return (
     <div className="card-container">
-      <img className="card-image" src={katieImage} alt="Katie Zaferes" />
+      <div className="image-container">
+        <button className="sold-out-label">SOLD OUT</button>
+        <img className="card-image" src={katieImage} alt="Katie Zaferes" />
+      </div>
       <div className="card-text-container">
         <div className="rating-text-container">
           <img className="star" src={star} alt="star" />

@@ -2,6 +2,23 @@
     padding-left: 37px;
 }
 
+.image-container {
+    position: relative;
+}
+
+.sold-out-label {
+    position: absolute;
+    background: #FFFFFF;
+    border: solid #FFFFFF;
+    border-radius: 2px;
+    padding: 5px 6px 4px 6px;
+    margin: 6px 0px 0px 6px;
+    font-family: 'Poppins';
+    font-size: 10.24px;
+    line-height: 110%;
+    color: #222222;
+}
+
 .card-image {
     width: 176px;
     height: 235px;
