@@ -1,0 +1,33 @@
+.image-collection {
+    margin: 26px 77px 32px 77px;
+    border-radius: 8.95px;
+    width: 395.91px;
+    height: 232px;
+}
+
+.text-content-container {
+    padding-left: 36px;
+    padding-bottom: 49px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-content-label {
+    height: 40px;
+    margin: 0px;
+    font-family: 'Poppins';
+    font-size: 36px;
+    line-height: 110%;
+    color: #000000;
+}
+
+.text-content {
+    width: 320px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 110%;
+    color: #222222;
+}
