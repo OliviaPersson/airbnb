@@ -1,0 +1,64 @@
+.card-container {
+    padding-left: 37px;
+}
+
+.card-image {
+    width: 176px;
+    height: 235px;
+}
+
+.rating-text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 9px;
+    gap: 2px;
+}
+
+.star {
+    width: 14px;
+    height: 14px;
+}
+
+.rating-text-container > p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    line-height: 110%;
+}
+
+.rating {
+    color: #222222;
+}
+
+.rating-amount {
+    color: #918E9B;
+}
+
+.ellipse {
+    width: 2px;
+    height: 2px;
+    background: #918E9B;
+    border-radius: 50%;
+}
+
+.country {
+    color:#918E9B;
+}
+
+.experience-description {
+    margin: 8px 0px 0px 0px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    line-height: 110%;
+    color: #222222;
+}
+
+.cost {
+    margin: 8px 0px 0px 0px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    line-height: 110%;
+    color: #222222;
+}
