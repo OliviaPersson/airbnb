@@ -1,13 +1,21 @@
 import React from "react";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
+import katieImage from "./images/katie-zaferes.png";
 import "./App.css";
 
 function App() {
   return (
     <React.Fragment>
       <Hero />
-      <Card />
+      <Card
+        img={katieImage}
+        rating="5.0"
+        reviewCount="(6)"
+        country="USA"
+        title="title"
+        price="136"
+      />
     </React.Fragment>
   );
 }

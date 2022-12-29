@@ -1,27 +1,24 @@
-import "./Card.css";
-import katieImage from "../images/katie-zaferes.png";
 import star from "../images/star.png";
+import "./Card.css";
 
-const Card = () => {
+const Card = ({ img, rating, reviewCount, country, title, price }) => {
   return (
-    <div className="card-container">
+    <div className="card">
       <div className="image-container">
-        <button className="sold-out-label">SOLD OUT</button>
-        <img className="card-image" src={katieImage} alt="Katie Zaferes" />
+        <button className="badge">SOLD OUT</button>
+        <img className="activity-image" src={img} />
       </div>
       <div className="card-text-container">
-        <div className="rating-text-container">
+        <div className="card-stats">
           <img className="star" src={star} alt="star" />
-          <p className="rating">5.0</p>
-          <p className="rating-amount">(6)</p>
+          <p className="rating">{rating}</p>
+          <p className="rating-count">{reviewCount}</p>
           <div className="ellipse"></div>
-          <p className="country">USA</p>
+          <p className="country">{country}</p>
         </div>
-        <p className="experience-description">
-          Life lessons with Katie Zaferes
-        </p>
+        <p className="activity-description">{title}</p>
         <p className="cost">
-          <strong>From $136 </strong>/ person
+          <strong>From ${price} </strong>/ person
         </p>
       </div>
     </div>

@@ -1,4 +1,4 @@
-.card-container {
+.card {
     padding-left: 37px;
 }
 
@@ -6,7 +6,7 @@
     position: relative;
 }
 
-.sold-out-label {
+.badge {
     position: absolute;
     background: #FFFFFF;
     border: solid #FFFFFF;
@@ -19,12 +19,12 @@
     color: #222222;
 }
 
-.card-image {
+.activity-image {
     width: 176px;
     height: 235px;
 }
 
-.rating-text-container {
+.card-stats {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -37,7 +37,7 @@
     height: 14px;
 }
 
-.rating-text-container > p {
+.card-stats > p {
     margin-top: 0px;
     margin-bottom: 0px;
     font-family: 'Poppins';
@@ -49,7 +49,7 @@
     color: #222222;
 }
 
-.rating-amount {
+.rating-count {
     color: #918E9B;
 }
 
@@ -64,7 +64,7 @@
     color:#918E9B;
 }
 
-.experience-description {
+.activity-description {
     margin: 8px 0px 0px 0px;
     font-family: 'Poppins';
     font-size: 12px;
