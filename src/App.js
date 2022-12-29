@@ -11,9 +11,9 @@ function App() {
       <Card
         img={katieImage}
         rating="5.0"
-        reviewCount="(6)"
+        reviewCount={6}
         country="USA"
-        title="title"
+        title="Life lessons with Katie Zaferes"
         price="136"
       />
     </React.Fragment>

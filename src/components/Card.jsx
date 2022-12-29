@@ -12,7 +12,7 @@ const Card = ({ img, rating, reviewCount, country, title, price }) => {
         <div className="card-stats">
           <img className="star" src={star} alt="star" />
           <p className="rating">{rating}</p>
-          <p className="rating-count">{reviewCount}</p>
+          <p className="rating-count">({reviewCount})</p>
           <div className="ellipse"></div>
           <p className="country">{country}</p>
         </div>
