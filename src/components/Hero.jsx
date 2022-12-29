@@ -1,9 +1,11 @@
-import "./Hero.css";
 import imageCollection from "../images/image-collection.png";
+import "./Hero.css";
+import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
     <div className="hero-container">
+      <Navbar />
       <img
         className="image-collection"
         src={imageCollection}
