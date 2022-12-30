@@ -14,7 +14,7 @@ function App() {
         {cardData.map((card) => {
           return (
             <Card
-              _id={card.id}
+              key={card.id}
               img={card.coverImg}
               rating={card.stats.rating}
               reviewCount={card.stats.reviewCount}
