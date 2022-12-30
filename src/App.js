@@ -1,21 +1,28 @@
 import React from "react";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
-import katieImage from "./images/katie-zaferes.png";
+import { getAllActivityCardData } from "./data";
 import "./App.css";
 
 function App() {
+  const cardData = [...getAllActivityCardData()];
+
   return (
     <React.Fragment>
       <Hero />
-      <Card
-        img={katieImage}
-        rating="5.0"
-        reviewCount={6}
-        country="USA"
-        title="Life lessons with Katie Zaferes"
-        price="136"
-      />
+      {cardData.map((card) => {
+        return (
+          <Card
+            _id={card.id}
+            img={card.coverImg}
+            rating={card.stats.rating}
+            reviewCount={card.stats.reviewCount}
+            country={card.location}
+            title={card.title}
+            price={card.price}
+          />
+        );
+      })}
     </React.Fragment>
   );
 }
