@@ -10,19 +10,21 @@ function App() {
   return (
     <React.Fragment>
       <Hero />
-      {cardData.map((card) => {
-        return (
-          <Card
-            _id={card.id}
-            img={card.coverImg}
-            rating={card.stats.rating}
-            reviewCount={card.stats.reviewCount}
-            country={card.location}
-            title={card.title}
-            price={card.price}
-          />
-        );
-      })}
+      <section className="card-list-container">
+        {cardData.map((card) => {
+          return (
+            <Card
+              _id={card.id}
+              img={card.coverImg}
+              rating={card.stats.rating}
+              reviewCount={card.stats.reviewCount}
+              country={card.location}
+              title={card.title}
+              price={card.price}
+            />
+          );
+        })}
+      </section>
     </React.Fragment>
   );
 }
