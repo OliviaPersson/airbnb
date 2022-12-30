@@ -1,11 +1,19 @@
 import star from "../images/star.png";
 import "./Card.css";
 
-const Card = ({ img, rating, reviewCount, country, title, price }) => {
+const Card = ({
+  img,
+  rating,
+  reviewCount,
+  country,
+  title,
+  price,
+  openSpots,
+}) => {
   return (
     <div className="card">
       <div className="image-container">
-        <button className="badge">SOLD OUT</button>
+        {openSpots && <button className="badge">SOLD OUT</button>}
         <img className="activity-image" src={img} />
       </div>
       <div className="card-text-container">

@@ -21,6 +21,7 @@ function App() {
               country={card.location}
               title={card.title}
               price={card.price}
+              openSpots={card.openSpots}
             />
           );
         })}
