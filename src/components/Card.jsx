@@ -13,7 +13,7 @@ const Card = ({
   return (
     <div className="card">
       <div className="image-container">
-        {openSpots && <button className="badge">SOLD OUT</button>}
+        {openSpots === 0 && <button className="badge">SOLD OUT</button>}
         <img className="activity-image" src={img} />
       </div>
       <div className="card-text-container">
